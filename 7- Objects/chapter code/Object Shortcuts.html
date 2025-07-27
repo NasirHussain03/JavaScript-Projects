@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Shortcuts</title>
+</head>
+<body>
+  <script>
+    let product = {
+      company : 'Mango',
+      price : 861,
+      'item-name' : 'T-shirt',
+    };
+    // De-Structuring
+    // let company = product.company;
+    // console.log(company);
+    // Is same as 
+    let {company, price} = product;
+    console.log(company);
+    console.log(price);
+
+  </script>
+</body>
+</html>

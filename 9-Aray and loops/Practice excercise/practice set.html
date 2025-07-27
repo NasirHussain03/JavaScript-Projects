@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Excercise</title>
+</head>
+<body>
+  <script>
+  // create a array of numbers[5,6]. Add 4 at the begining and 7 at the end of the array 
+    // let arr = [5,6];
+    // arr.unshift(4);
+    // console.log(arr);
+    // arr.push(7);
+    // console.log(arr);
+
+  // create a method to return an element at a particular position in array 
+    // function returnElement(arr, position) {
+    //   return arr[position - 1];
+    // }
+    // let arr = [56,6,9,8,5,2,3,,6];
+    // console.log(returnElement(arr, 1));
+
+  // create an array copy using a slice method 
+    // function arrCopy(arr) {
+    //   return arr.slice(0, arr.length);
+    // }
+    // let arr = [56,6,9,8,5,2,3,,6];
+    // console.log(arr.slice(1,3));
+    // console.log(arrCopy(arr));
+    // let arr2 = arrCopy(arr);
+    // arr2[2]=99;
+    // console.log(arr);
+    // console.log(arr2);
+  
+  // create a while loop that exists after counting 5 prime numbers
+    // function isPrime(num) {
+    //   for (let i=2; i<num; i++){
+    //     if (num % i === 0) {
+    //       return false;
+    //     }
+    //   }
+    //   return true;
+    // }
+    // console.log(isPrime(6));
+    // console.log(isPrime(7));
+    // console.log(isPrime(17));
+    // console.log(isPrime(21));
+
+    // let num =2;
+    // let i =0;
+    // while (i <5) {
+    //   if (isPrime(num)) {
+    //     console.log(num);
+    //     i++;
+    //   }
+    //   num++;
+    // }
+
+  // modify the above code using break 
+    // function isPrime(num) {
+    //   for (let i=2; i<num; i++){
+    //     if (num % i === 0) {
+    //       return false;
+    //     }
+    //   }
+    //   return true;
+    // }
+    // let num =2;
+    // let i =0;
+    // while (true) {
+    //   if (isPrime(num)) {
+    //     console.log(num);
+    //     i++;
+    //     if (i>=5) {
+    //       break;
+    //     }
+    //   }
+    //   num++;
+    // }
+
+
+  // create for loop that prints ten numbers in reverse order 
+    // for (i=10; i>0; i--){
+    //   console.log(i);
+    // }
+
+    // for (i=1; i<=10; i++){
+    //   console.log(10 - i);
+    // }
+
+  // Using comtinue only print positive number from the given array[1,-6,5,7,-98] 
+    // let arr = [1,-6,5,7,-98];
+    // for (i=0; i<arr.length; i++) {
+    //   if (arr[i]<0) {
+    //     continue;
+    //   }
+    //   console.log(arr[i]);
+    // }
+    
+  // using accumulator pattern concxatenate all the strings in the given array['K G', 'Coding', 'is', 'Best']
+    let arr = ['KG', 'Coding', 'is', 'Best'];
+    let result = '';
+    for (let i = 0; i<arr,length; i++) {
+      result += arr[i];
+    }
+    console.log(result);
+
+    console.log(arr.join(" "));
+    console.log(arr.join(","));
+  </script>
+</body>
+</html>

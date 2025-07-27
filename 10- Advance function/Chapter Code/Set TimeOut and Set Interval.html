@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set TImeOut And Set Interval</title>
+</head>
+<body>
+  <script>
+    let alarm = () => console.log(`subah ho gayi h uth jao ${new Date()}`);
+    // let TimerId = setTimeout(alarm, 1000);
+    // console.log(`Alarm Set with TimerId: ${TimerId}`);
+    // clearTimeout(TimerId);
+
+    let IntervalId = setInterval(alarm, 1000);
+    setTimeout(() => {
+      clearInterval(IntervalId)
+    }, 3000); 
+
+  </script>
+</body>
+</html>

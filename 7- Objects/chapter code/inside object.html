@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iNSIDE oBJECT</title>
+</head>
+<body>
+  <script>
+    let product  = {
+      company: 'Mango',
+      price: 250,
+      'item-name': 'T-shirt',
+      displayPrice: function(){
+        console.log(`Price of the producty is ₹${product.price}`)
+      },
+    };
+
+    product.displayPrice();
+    product.price = 100;
+    product.displayPrice();
+    
+
+  </script>
+</body>
+</html>

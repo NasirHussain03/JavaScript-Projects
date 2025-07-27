@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Properties</title>
+</head>
+<body>
+  <script>
+    let arr = [1,2,3];
+    console.log(arr);
+    arr.push(5);
+    console.log(arr);
+    arr.pop();
+    console.log(arr);
+    console.log('popped ' + arr.pop());
+    console.log(arr);
+    console.log('Shiftted ' + arr.shift());
+    console.log(arr);
+    console.log('Unshift ' + arr.unshift(5));
+    console.log(arr);
+    console.log('Shiftted ' + arr.shift());
+    console.log(arr);
+
+    let arr2 = [7,8,3,9];
+    arr2.splice(1, 2);
+    console.log(arr2);
+
+    // convert array to string using toString Property
+    let arr3 = [7,8,3,9];
+    console.log(arr3);
+    console.log(arr3.toString());
+    arr3.sort();
+    console.log(arr3);
+
+    console.log(arr3.valueOf());
+
+    // array uses references as object
+    let arr4 = arr3;
+    arr4[0] = 1;
+    console.log(arr3);
+
+    // De-Structuring in Array 
+    let [a,b,c,d] = arr3;
+    console.log(a + " ", b + " ", c + " ", d + " ");
+    
+  </script>
+</body>
+</html>

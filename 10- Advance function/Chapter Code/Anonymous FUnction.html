@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonymous Function</title>
+</head>
+<body>
+  <script>
+
+  // Anonymous Function
+    // let sum = function (num1, num2){
+    //   return num1 + num2;
+    // }
+    // let newSum = sum;
+    // console.log(sum(1, 9));
+    // console.log(newSum(1, 9));
+  
+  // Function as an argument [4 + 5 + 7]
+      let sum = function (num1, num2){
+        return num1 + num2;
+      }
+      let sumOFThreeNumbers = function(num1, num2, num3, sumTwoNumbers){
+        sum1 = sumTwoNumbers(num1, num2);
+        sum2 = sumTwoNumbers(sum1, num3);
+        return sum2;
+      }
+
+      console.log(sumOFThreeNumbers(4,5,7, sum));
+
+    console.log((typeof sumOFThreeNumbers));
+    console.log(sumOFThreeNumbers);
+
+  </script>
+</body>
+</html>
